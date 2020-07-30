@@ -16,3 +16,15 @@ variable "AMIS" {
     eu-west-1 = "ami-0c1e832407373333f"
   }
 }
+
+variable "PATH_TO_PRIVATE_KEY" {
+  default = "mykey"
+}
+
+variable "PATH_TO_PUBLIC_KEY" {
+  default = "mykey.pub"
+}
+
+variable "INSTANCE_USERNAME" {  # ec2-user for Linux if we are spinning up Linux
+  default = "ubuntu"
+}
